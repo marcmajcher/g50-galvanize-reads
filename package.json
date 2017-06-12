@@ -1,0 +1,23 @@
+{
+  "name": "g50-galvanize-reads",
+  "version": "1.0.0",
+  "description": "Narshimus",
+  "main": "sample_authors.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Narshimus/g50-galvanize-reads.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Narshimus/g50-galvanize-reads/issues"
+  },
+  "homepage": "https://github.com/Narshimus/g50-galvanize-reads#readme",
+  "dependencies": {
+    "knex": "^0.13.0",
+    "pg": "^6.2.4"
+  }
+}
