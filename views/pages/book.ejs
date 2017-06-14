@@ -22,10 +22,9 @@
       </thead>
 
       <tbody>
-        <% books.forEach((book) => { %>
+
           <tr>
             <td>
-              <a href="/books/<%= book.id %>">
                 <img src="<%= book.cover_url %>" alt="<%= book.title %>" />
               </a>
             </td>
@@ -37,7 +36,6 @@
             <%}); %>
             </td>
           </tr>
-        <% }); %>
       </tbody>
     </table>
   </body>
