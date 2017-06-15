@@ -20,8 +20,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 //routes
 const books = require('./routes/books');
+const authors = require('./routes/authors')
 
 app.use(books);
+app.use(authors);
 
 //errors
 app.use((_req, res) => {

@@ -13,7 +13,7 @@ router.get('/books', (_req, res) => {
   });
 });
 
-router.get('/books/:index', (_req, res) => {
+router.get('/books/:index', (_req, res, next) => {
   const index = Number.parseInt(_req.params.index);
   if (Number.isNaN(index) || index < 0) {
     next();
