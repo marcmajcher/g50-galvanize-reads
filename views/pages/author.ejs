@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+      <script type="text/javascript" href="/js/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" href="/js/materialize.min.js"></script>
+
+    <title>Books</title>
+  </head>
+
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <td>Sprite</td>
+          <td>Name</td>
+          <td>Biography</td>
+          <td>Bibliography</dt>
+        </tr>
+      </thead>
+
+      <tbody>
+
+          <tr>
+            <td>
+                <img src="<%= author.portrait_url %>" alt="<%= author.first_name%>" />
+              </a>
+            </td>
+            <td><%= `${author.first_name} ${author.last_name}` %></td>
+            <td><%= author.biography %></td>
+            <td>
+              <% author.books.forEach((book,i)=> { %>
+              <li><%= `${i+1}. ${book.title}`%></li>
+            <%}); %>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
